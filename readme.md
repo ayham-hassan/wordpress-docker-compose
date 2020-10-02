@@ -21,7 +21,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 # Running WordPress in Containers
 this WordPress deployment uses docker-compose to run the official WordPress optimized image (alpine image) served via Nginx webserver container and use MySQL DB container. all of these containers run on the same docker network (thanks for docker bridge networks!).
 - copy `.env.example` to `.env` and update it according your secrets
-- hit `docker-compose up -d` in your terminal, then once images are being downloaded your WordPress app will run and open your browser at the following link `http://localhost:8080`
+- hit `docker-compose up -d` in your terminal, then once images are being downloaded your WordPress app will run, then open your browser at the following link `http://localhost:8080`
   
 hint:
 you can change the port `8888` in docker-compose.yml file at line `39` or simply add it in .env! =)
